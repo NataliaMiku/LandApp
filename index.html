@@ -1,163 +1,217 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> -->
+      <meta name="Author" content="Natalia Mikulenko, natalie.miku@gmail.com">
+      <meta name="description" content="Portfolio Website" />
+      <meta name="keywords" content="Webdesign, Development, Front End Development, Website Design Auckland, php, e-commerce, html5, css3, responsive, mobile, jQuery." />
+      <title> Designmagazine | Portfolio </title>
+
+      <!-- Favicons
+      ================================================== -->
+      <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+      <link rel="apple-touch-icon" href="assets/images/favicons/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+
+      <link rel="stylesheet" href="assets/css/app.css" />
+      <!-- <link rel="stylesheet" type="text/css" href="assets/src/css/landpage.css"> -->
+      <!-- <script src="bower_components/modernizr/modernizr.js"></script> -->
   </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+  <body class="landf-cyan page-home" data-current-slide="">
+            <div class="menu-wrap-container">
+                <ul id="dm-menu" class="dm-menu-main">
+                    <li class="dm-trigger">
+                      <a class="dm-icon dm-icon-menu"><span>Menu</span></a>
+                      <nav class="dm-menu-wrapper">
+                        <div class="dm-scroller">
+                          <ul class="dm-menu">
+                            <li class="dm-search-item">
+                              <input placeholder="Search" type="search" class="dm-search">
+                              <a class="dm-icon dm-icon-search"><span>Search</span></a>
+                            </li>
+                            <li>
+                              <a class="dm-icon dm-icon-help">About</a>
+                              <ul class="dm-submenu">
+                                <li><a class="dm-icon dm-icon-cog">Web Development</a></li>
+                                <li><a class="dm-icon dm-icon-illustrator">Web Design</a></li>
+                                <li><a class="dm-icon dm-icon-book">Skills</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="dm-icon dm-icon-archive">Works</a>
+                              <ul class="dm-submenu">
+                                <li><a class="dm-icon dm-icon-articles">Front-End</a></li>
+                                <li><a class="dm-icon dm-icon-pictures">Design</a></li>
+                              </ul>
+                            </li>
+                            <li><a class="dm-icon dm-icon-info">Help</a></li>
+                            <li><a class="dm-icon dm-icon-contact">Contact</a></li>
+                            
+                          </ul>
+                        </div>
+                      </nav>
+                    </li>
+                    <li><a class="dm-icon dm-icon-home" href="#"></a></li>
+                </ul>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                               
+                        <main id="main-content" role="main" class="">
+                            <section class="inner-section section-home">
+                                <!-- <div id="section-controls" class="controls-bright" style="margin-top: -50px;"> -->
+                                <div id="section-controls" class="controls-bright">
+                                  <a data-slide-index="1" href="#slide-1" class="active"><span></span></a>
+                                  <a data-slide-index="2" href="#slide-2"><span></span></a>
+                                  <a data-slide-index="3" href="#slide-3"><span></span></a>
+                                </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+                                <div class="home-preloader"></div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
+                                
+                                      <header class="header-section text-center header-slide-1">
+                                          <h1>WEBSITES FOR ANYONE</h1>
+                                          <h3>WEB DESIGN<span><i class="fa fa-circle"></i></span>
+                                              FRONT-END DEVELOPMENT<span><i class="fa fa-circle"></i></span>
+                                              DIGITAL DESIGN
+                                          </h3>
+                                          <span>
+                                              <a href="#" class="radius small button">Find More</a>
+                                          </span>
+                                      </header>
+                                  
 
-        <hr />
+                                
 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
+                                <header class="header-section wrapper text-center header-slide-2">
+                                    <h1>WEBSITES FOR ANYONE</h1>
+                                    <h3>WEB DESIGN<span><i class="fa fa-circle"></i></span>
+                                        FRONT-END DEVELOPMENT<span><i class="fa fa-circle"></i></span>
+                                        DIGITAL DESIGN
+                                    </h3>
+                                    <span>
+                                        <a href="#" class="radius small button">Find More</a>
+                                    </span>
+                                </header>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
-        </div>
-      </div>
-    </div>
+                                <header class="header-section wrapper text-center header-slide-3">
+                                    <h1>WEBSITES FOR ANYONE</h1>
+                                    <h3>WEB DESIGN<span><i class="fa fa-circle"></i></span>
+                                        FRONT-END DEVELOPMENT<span><i class="fa fa-circle"></i></span>
+                                        DIGITAL DESIGN
+                                    </h3>
+                                    <span>
+                                        <a href="#" class="radius small button">Find More</a>
+                                    </span>
+                                </header>
+                        
+                                <div class="animation-holder">
+                                  <div class="canvas-coffee">
+                                      <img src="assets/images/landingpage/scene01/dm-coffeecup.svg" alt="">
+                                  </div>
+                                  <!-- <div class="canvas-pen-1"><img src="assets/images/landingpage/scene01/pen01.svg" alt=""></div>
+                                  <div class="canvas-pen-2"><img src="assets/images/landingpage/scene01/pen02.svg" alt=""></div>
+                                  <div class="canvas-pen-3"><img src="assets/images/landingpage/scene01/pen03.svg" alt=""></div> -->
+                                  <!-- <div class="canvas-notepad"><img src="assets/images/landingpage/scene01/notepad.svg" alt=""></div> -->
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+                                  <!-- <div class="canvas-tablet">
+                                      <img src="assets/images/landingpage/scene01/dm-tablet.svg" alt="">
+                                  </div> -->
+
+                                  <div class="canvas-ipad">
+                                      <img src="assets/images/landingpage/scene01/dm-ipad.svg" alt="">
+                                  </div>
+                                  <div class="canvas-marker">
+                                      <img src="assets/images/landingpage/scene01/dm-marker.svg" alt="">
+                                  </div>
+
+                                  <!-- <div class="canvas-iphone"><img src="assets/images/landingpage/scene01/iphone.svg" alt=""></div> -->
+
+                                  <div class="canvas-iphone">
+                                      <img src="assets/images/landingpage/scene01/dm-iphone.svg" alt="">
+                                  </div>
+
+                                  <!-- <div class="canvas-breadcrumbs"><img src="assets/images/landingpage/scene01/breadcrumbs.svg" alt=""></div> -->
+                                  <!-- <div class="canvas-snack"><img src="assets/images/landingpage/scene01/crescent.svg" alt=""></div> -->
+
+                                  <div class="canvas-tablet">
+                                      <img src="assets/images/landingpage/scene01/dm-tablet.svg" alt="">
+                                  </div>
+
+                                  <div class="canvas-sticky-1"><img src="assets/images/landingpage/scene01/sticky01.svg" alt=""></div>
+                                  <div class="canvas-sticky-2"><img src="assets/images/landingpage/scene01/sticky02.svg" alt=""></div>
+                                  <!-- <div class="canvas-photo-1"><img src="assets/images/landingpage/scene01/pic01.svg" alt=""></div> -->
+                                  <!-- <div class="canvas-photo-2"><img src="assets/images/landingpage/scene01/pic02.svg" alt=""></div> -->
+
+                                  <div class="canvas-tablet-pen">
+                                      <img src="assets/images/landingpage/scene01/dm-tablet-pen.svg" alt="">
+                                  </div>
+
+                                  <div class="canvas-crump-paper1">
+                                      <img src="assets/images/landingpage/scene01/dm-crumpled-paper1.svg" alt="">
+                                  </div>
+
+                                  <!-- <div class="canvas-paper-1"><img src="assets/images/landingpage/scene01/crumpled-paper02.svg" alt=""></div>
+                                  <div class="canvas-paper-2"><img src="assets/images/landingpage/scene01/crumpled-paper02.svg" alt=""></div>
+                                  <div class="canvas-paper-3"><img src="assets/images/landingpage/scene01/crumpled-paper03.svg" alt=""></div> -->
+                                  <div class="canvas-monitor-1"><img src="assets/images/landingpage/scene02/monitor01.svg" alt=""></div>
+                                  <div class="canvas-monitor-1"><img src="assets/images/landingpage/scene02/laptop.png" alt=""></div>
+                                  <div class="canvas-pencil-case"><img src="assets/images/landingpage/scene02/pencil-case.svg" alt=""></div>
+                                  <div class="canvas-backpack"><img src="assets/images/landingpage/scene02/backpack.svg" alt=""></div>
+                                  <div class="canvas-lamp-1"><img src="assets/images/landingpage/scene02/lamp-night.svg" alt=""></div>
+                                  <div class="canvas-book-1"><img src="assets/images/landingpage/scene02/book01.svg" alt=""></div>
+                                  <div class="canvas-book-2"><img src="assets/images/landingpage/scene02/book02.svg" alt=""></div>
+                                  <div class="canvas-book-3"><img src="assets/images/landingpage/scene02/book03.svg" alt=""></div>
+                                  <div class="canvas-rocket">
+                                    <img class="rocket-head" src="assets/images/landingpage/scene02/rocket-top-01.svg" alt="">
+                                    <img class="rocket-body" src="assets/images/landingpage/scene02/rocket-medium.svg" alt="">
+                                    <img class="rocket-tail" src="assets/images/landingpage/scene02/rocket-medium-bottom.svg" alt="">
+                                  </div>
+                                  <div class="canvas-window">
+                                    <img class="window-frame" src="assets/images/landingpage/scene02/window.svg" alt="">
+                                    <div class="window-scene"><img class="" src="assets/images/landingpage/scene02/scenario.svg" alt=""></div>
+                                  </div>
+                                  <div class="canvas-monitor-2"><img src="assets/images/landingpage/scene03/monitor02.svg" alt=""></div>
+                                  <div class="canvas-lamp-2"><img src="assets/images/landingpage/scene03/lamp-night.svg" alt=""></div>
+                                  <div class="canvas-book-4"><img src="assets/images/landingpage/scene03/book04.svg" alt=""></div>
+                                  <div class="canvas-book-5"><img src="assets/images/landingpage/scene03/book05.svg" alt=""></div>
+                                  <div class="canvas-sticky-3"><img src="assets/images/landingpage/scene03/sticky-left.svg" alt=""></div>
+                                </div>
+                            </section>                        
+                        </main>
+                    
+
+                          
+
+
+            </div><!-- /menu-wrap-container -->
+
+
+
+
+
+
+
+
+
+    
+    <!-- Required javascript libraries -->
+    <script type="text/javascript" src="assets/js/libs/libs.min.js"></script>
+    <!-- Foundation libraries: (minified) -->
+    <script type="text/javascript" src="assets/js/libs/foundation.min.js"></script>
+    <!-- App js (minified) -->
+    <script type="text/javascript" src="assets/js/app.min.js"></script>
+    <script>
+      new dmMenu( document.getElementById( 'dm-menu' ) );
+    </script>
+    <script src="assets/js/vendor/landingpage/vendor/enquire.js"></script>
+    <script src="assets/js/vendor/landingpage/plugins/jquery.mousewheel.js"></script>
+    <script src="assets/js/vendor/landingpage/plugins/jquery.ba-hashchange.min.js"></script>
+    <script src="assets/js/vendor/landingpage/script.js"></script>
+
+
   </body>
 </html>

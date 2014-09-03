@@ -2,3 +2,6 @@
 /css/*
 /bower_components/*
 /node_modules/*
+/assets/psd/*
+/assets/images/*/*
+/assets/images/*
